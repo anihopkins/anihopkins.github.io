@@ -25,6 +25,16 @@ h1 a{
   color: black;
 }
 
+.main {
+  margin-top: 0.1%;
+  width: 60%;
+  height: 50%;
+  background: grey;
+  position: absolute;
+  top: 120px;
+  left: 175px;
+}
+
 .box {
   margin-top: 0.1%;
   width: 100%;
