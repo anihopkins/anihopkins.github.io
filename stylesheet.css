@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'Existence-Light';
+  src: url('Existence-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Liberation-Mono';
+    src: url('Liberation-Mono.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+  margin-top: 1%;
+  margin-left: 2%;
+  margin-bottom: 0.1%;
+  font-family: 'Existence-Light';
+  font-size: 400%;
+}
+
+h1 a{
+  text-decoration: none;
+  color: black;
+}
+
+.box {
+  margin-top: 0.1%;
+  width: 100%;
+  height: 10px;
+}
+
+.black {
+  background: black;
+}
+
+.sidebar {
+  top: 20px;
+  left: 20px;
+  width: 9%;
+  position: relative;
+  background: white;
+}
+
+.sidebar a {
+  padding-left: 10px;
+  font-family: 'Liberation-Mono';
+  font-size: 18pt;
+  text-decoration: none;
+  color: black;
+  display: block;
+  width: 100%;
+}
+
+.sidebar a:hover {
+  padding-left: 10px;
+  color: white;
+  background: black;
+  width: 100%;
+}
