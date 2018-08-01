@@ -65,7 +65,7 @@ h2 {
 }
 
 .aboutMain img {
-  width: 30%;
+  width: 16em;
   position: relative;
   top: -10%;
   left: 110%;
@@ -90,6 +90,15 @@ h2 {
 }
 
 .sidebar a {
+  -moz-transition: color .2s ease-in;
+  -o-transition: color .2s ease-in;
+  -webkit-transition: color .2s ease-in;
+
+  -moz-transition: background .2s ease-in;
+  -o-transition: background .2s ease-in;
+  -webkit-transition: background .2s ease-in;
+
+  background: white;
   padding-left: 10px;
   font-family: 'Liberation-Mono';
   font-size: 18pt;
