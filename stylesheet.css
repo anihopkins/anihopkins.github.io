@@ -6,6 +6,20 @@
 }
 
 @font-face {
+  font-family: 'Liberation-Sans';
+  src: url('Liberation-Sans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Liberation-Sans-Bold';
+    src: url('Liberation-Sans-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Liberation-Mono';
     src: url('Liberation-Mono.woff') format('woff');
     font-weight: normal;
@@ -25,14 +39,36 @@ h1 a{
   color: black;
 }
 
-.main {
+h2 {
+  margin-top: 0%;
+  margin-left: 0%;
+  margin-bottom: 0.1%;
+  font-family: 'Liberation-Sans-Bold';
+  font-size: 230%;
+}
+
+.aboutMain {
   margin-top: 0.1%;
-  width: 60%;
+  margin-left: 3%;
+  width: 50%;
   height: 50%;
-  background: grey;
   position: absolute;
   top: 120px;
   left: 175px;
+}
+
+.aboutMain p{
+  margin-top: 0.1%;
+  position: absolute;
+  font-family: Helvetica;
+  font-size: 120%;
+}
+
+.aboutMain img {
+  width: 30%;
+  position: relative;
+  top: -10%;
+  left: 110%;
 }
 
 .box {
