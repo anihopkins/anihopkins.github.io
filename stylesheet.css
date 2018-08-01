@@ -1,3 +1,4 @@
+/* Existence Light */
 @font-face {
   font-family: 'Existence-Light';
   src: url('Existence-Light.woff') format('woff');
@@ -5,6 +6,7 @@
   font-style: normal;
 }
 
+/* Liberation-Sans */
 @font-face {
   font-family: 'Liberation-Sans';
   src: url('Liberation-Sans-Regular.woff') format('woff');
@@ -12,6 +14,7 @@
   font-style: normal;
 }
 
+/* Liberation-Sans-Bold */
 @font-face {
     font-family: 'Liberation-Sans-Bold';
     src: url('Liberation-Sans-Bold.woff') format('woff');
@@ -19,6 +22,7 @@
     font-style: normal;
 }
 
+/* Liberation-Mono */
 @font-face {
     font-family: 'Liberation-Mono';
     src: url('Liberation-Mono.woff') format('woff');
@@ -52,9 +56,8 @@ h2 {
 
 .aboutMain {
   margin-top: 0.1%;
-  margin-left: 3%;
+  margin-left: 2%;
   width: 50%;
-  height: 50%;
   position: absolute;
   top: 120px;
   left: 175px;
@@ -62,6 +65,7 @@ h2 {
 
 .aboutMain p{
   margin-top: 2%;
+  margin-left: 2%;
   position: absolute;
   font-family: Helvetica;
   font-size: 120%;
@@ -70,14 +74,43 @@ h2 {
 .aboutMain img {
   height: 17em;
   position: relative;
-  top: 5%;
+  top: 1%;
   left: 110%;
 }
 
+.writingMain {
+  margin-top: 0%;
+  margin-left: 2%;
+  width: inherit;
+  position: absolute;
+  top: 120px;
+  left: 175px;
+  font-family: 'Liberation-Sans';
+}
+
+.writingMain a{
+  margin-top: 2%;
+  margin-left: 2%;
+  position: relative;
+  font-family: 'Liberation-Sans-Bold';
+  text-decoration: none;
+  color: black;
+}
+
+.writingMain p{
+  margin-top: 2%;
+  margin-left: 2%;
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
 .box {
+  left: 0px;
   margin-top: 0.1%;
   width: 100%;
   height: 10px;
+  position: absolute;
 }
 
 .black {
