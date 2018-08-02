@@ -65,6 +65,8 @@ h2 {
 .tuftsDaily {
   font-family: 'Metal';
   font-size: 200%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   margin-left: 2%;
 }
 
@@ -106,7 +108,7 @@ h2 {
 
 .writingMain a{
   margin-top: 2%;
-  margin-left: 2%;
+  margin-left: 4%;
   position: relative;
   font-family: 'Liberation-Sans-Bold';
   text-decoration: none;
@@ -146,13 +148,14 @@ h2 {
 }
 
 .contactMain p{
-  margin-top: 2%;
+  margin-top: 0%;
   margin-left: 2%;
   width: 100%;
   position: absolute;
   font-family: 'Liberation-Sans';
-  font-size: 140%;
+  font-size: 120%;
 }
+
 .contactMain a{
   position: relative;
   font-family: 'Liberation-Sans-Bold';
