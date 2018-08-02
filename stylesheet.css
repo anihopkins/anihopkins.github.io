@@ -39,7 +39,7 @@ head {
 }
 
 h1 {
-  margin-top: 1%;
+  margin-top: 0%;
   margin-left: 2%;
   margin-bottom: 0.1%;
   font-family: 'Existence-Light';
@@ -133,6 +133,31 @@ h2 {
 
 .workplace ul{
   margin-top: 0.5%;
+}
+
+.contactMain {
+  margin-top: 0%;
+  margin-left: 2%;
+  width: inherit;
+  position: absolute;
+  top: 120px;
+  left: 175px;
+  font-family: 'Liberation-Sans';
+}
+
+.contactMain p{
+  margin-top: 2%;
+  margin-left: 2%;
+  width: 100%;
+  position: absolute;
+  font-family: 'Liberation-Sans';
+  font-size: 140%;
+}
+.contactMain a{
+  position: relative;
+  font-family: 'Liberation-Sans-Bold';
+  text-decoration: none;
+  color: black;
 }
 
 .box {
