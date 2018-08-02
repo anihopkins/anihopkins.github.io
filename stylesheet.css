@@ -62,14 +62,6 @@ h2 {
   background: black;
 }
 
-h3 {
-  font-family: 'Liberation-Sans-Bold';
-  font-size: 125%;
-  margin-top: 2%;
-  margin-left: 2%;
-  position: relative;
-}
-
 .tuftsDaily {
   font-family: 'Metal';
   font-size: 300%;
@@ -130,11 +122,23 @@ h3 {
 .resumeMain {
   margin-top: 0%;
   margin-left: 2%;
-  width: inherit;
+  width: 70%;
   position: absolute;
   top: 120px;
   left: 175px;
   font-family: 'Liberation-Sans';
+}
+
+.workplace {
+  font-size: 120%;
+  margin-top: 2%;
+  margin-left: 2%;
+  position: relative;
+  display: inline;
+}
+
+.workplace ul{
+  margin-top: 0.5%;
 }
 
 .box {
