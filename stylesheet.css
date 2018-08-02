@@ -30,6 +30,14 @@
     font-style: normal;
 }
 
+@import "http://fonts.googleapis.com/css?family=Metal:200,300,400,400,600,700";
+
+head {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 h1 {
   margin-top: 1%;
   margin-left: 2%;
@@ -52,6 +60,12 @@ h2 {
   font-size: 200%;
   color: white;
   background: black;
+}
+
+.tuftsDaily {
+  font-family: 'Metal';
+  font-size: 300%;
+  margin-left: 2%;
 }
 
 .aboutMain {
