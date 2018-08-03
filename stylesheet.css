@@ -52,9 +52,10 @@ h1 a{
 }
 
 h2 {
+  left: 13%;
   width: 70vw;
   margin-top: 1%;
-  padding-left: 3%;
+  padding-left: 0.5em;
   margin-bottom: 1%;
   font-family: 'Liberation-Sans-Bold';
   font-size: 200%;
@@ -140,17 +141,17 @@ h2 {
 .contactMain {
   margin-top: 0%;
   margin-left: 2%;
-  width: inherit;
+  width: 80%;
   position: absolute;
   top: 1em;
-  left: 175px;
+  left: 8em;
   font-family: 'Liberation-Sans';
 }
 
 .contactMain p{
   margin-top: 0%;
   margin-left: 2%;
-  width: 100%;
+  width: inherit;
   position: absolute;
   font-family: 'Liberation-Sans';
   font-size: 120%;
@@ -176,11 +177,12 @@ h2 {
 }
 
 .sidebar {
-  top: 20px;
-  left: 20px;
-  width: 9%;
+  top: 250%;
+  left: 1.3%;
+  width: 9.7%;
   position: relative;
   background: white;
+  display: block;
 }
 
 .sidebar a {
@@ -197,14 +199,15 @@ h2 {
   font-family: 'Liberation-Mono';
   font-size: 18pt;
   text-decoration: none;
+  display: inherit;
   color: black;
-  display: block;
-  width: 100%;
+  width: auto;
 }
 
 .sidebar a:hover {
   padding-left: 10px;
   color: white;
   background: black;
-  width: 100%;
+  width: auto;
+  display: inherit;
 }
