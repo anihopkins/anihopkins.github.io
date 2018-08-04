@@ -163,6 +163,16 @@ h2 {
   color: black;
 }
 
+.fullScreen {
+  position: absolute;
+  background: transparent;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+}
+
 .box {
   left: 0px;
   margin-top: 0.1%;
@@ -199,15 +209,15 @@ h2 {
   font-family: 'Liberation-Mono';
   font-size: 18pt;
   text-decoration: none;
-  display: inline;
-  width: 9em;
+  display: block;
+  width: 4em;
 }
 
 .sidebar a:hover {
   color: white;
   background: black;
-  width: 9em;
-  display: inline;
+  width: 4em;
+  display: block;
 }
 
 .menu {

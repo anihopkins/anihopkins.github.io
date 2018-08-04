@@ -7,25 +7,24 @@
   <title> Ani Hopkins - Contact </title>
 </head>
 <body onload="resizeHandler()" onresize="resizeHandler()">
+  <div id="clickAway" class="fullScreen" onclick="hideMenu()"> </div>
   <h1 id="prettyName"><a href="index.html"> ANI HOPKINS </a>
     <div id="menu" class="menu" onmouseover="showMenu()">
       <!-- Menu by Yaroslav Samoylov from the Noun Project -->
-      <img
-      src="menu.png"
-      width="50px"
-      title="Menu by Yaroslav Samoylov from the Noun Project">
-      </img>
+      <div id="menuButton">
+        <img
+          src="menu.png"
+          width="50px"
+          title="Menu by Yaroslav Samoylov from the Noun Project">
+        </img>
+      </div>
     </div>
   </h1>
-
-  <div class="box black">
+  <div id="blackBar" class="box black">
     <div id="sidebar" class="sidebar">
       <a href="index.html"> ABOUT </a>
-      <p></p>
       <a href="writing.html"> WRITING </a>
-      <p></p>
       <a href="resume.html"> RESUME </a>
-      <p></p>
       <a href="contact.html"> CONTACT </a>
     </div>
     <div id="contactMain" class="contactMain">

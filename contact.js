@@ -1,3 +1,5 @@
+$("#clickAway").hide()
+
 // Resizes the contact window to accommodate smaller screens
 function resizeHandler() {
   /* console.clear()
@@ -9,28 +11,33 @@ function resizeHandler() {
     $("h2").css("padding-left","0.5em")
     $("#contactMain").css("left", "2%")
     $("#contactMain p").css({"font-size":"100%", "margin-top":"1%"})
+    $("#sidebar").css({"position":"absolute", "left":"-240%", "top":"0%", "width":"9em", "z-index":"10000"})
+    $("#sidebar a").css({"font-size":"24pt", "border":"1px solid black","width":"9em"})
   } else {
-    $("#sidebar").show()
+    hideMenu()
     $("#menu").hide()
     $("h2").css("padding-left","1em")
     $("#contactMain").css("left", "8em")
     $("#contactMain p").css({"font-size":"120%", "margin-top":"0%"})
+    $("#sidebar").css({"position":"relative", "left":"1.3%", "top":"250%", "width":"9em", "z-index":"9999"})
+    $("#sidebar a").css({"font-size":"18pt", "border":"none","width":"9em"})
+    $("#sidebar").show()
+    $("#contactMain").before($("#sidebar"))
   }
 }
 
 // Moves the sidebar to the menu button when screen is small
 function showMenu() {
+  console.clear()
   console.log("Show")
-  $("#prettyName").after($("#sidebar"))
+  $("#menu").append($("#sidebar"))
   $("#sidebar").show()
-  $("#sidebar").css({"position":"absolute", "left":"63%", "top":"4%", "width":"9em"})
-  $("#sidebar").on("mouseleave", hideMenu())
+  $("#clickAway").show()
 }
 
 function hideMenu() {
   console.log("Hide")
-  /*$("#prettyName").before($("#sidebar"))
   $("#sidebar").hide()
-  $("#sidebar").css({"position":"relative", "left":"1.3%", "top":"250%", "width":"9em"})
-  $("#sidebar").off("mouseout")*/
+  $("#sidebar").off("mouseout")
+  $("#clickAway").hide()
 }
