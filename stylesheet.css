@@ -52,8 +52,6 @@ h1 a{
 }
 
 h2 {
-  left: 13%;
-  width: 70vw;
   margin-top: 1%;
   padding-left: 0.5em;
   margin-bottom: 1%;
@@ -61,14 +59,6 @@ h2 {
   font-size: 200%;
   color: white;
   background: black;
-}
-
-.tuftsDaily {
-  font-family: 'Metal';
-  font-size: 200%;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  margin-left: 2%;
 }
 
 .aboutMain {
@@ -97,19 +87,35 @@ h2 {
   left: 75%;
 }
 
+.tuftsDaily {
+  font-family: 'Metal';
+  font-size: 200%;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 1em;
+}
+
 .writingMain {
   margin-top: 0%;
-  margin-left: 2%;
-  width: inherit;
+  padding-left: 2em;
+  width: 80%;
   position: absolute;
-  top: 120px;
-  left: 175px;
+  top: 1em;
+  left: 8em;
   font-family: 'Liberation-Sans';
 }
 
-.writingMain a{
-  margin-top: 2%;
-  margin-left: 4%;
+.writingContent{
+  margin-top: 0;
+  margin-left: 2em;
+  position: relative;
+  font-family: 'Liberation-Sans-Bold';
+  text-decoration: none;
+  color: black;
+}
+
+.writingContent a{
+  margin-top: 0;
   position: relative;
   font-family: 'Liberation-Sans-Bold';
   text-decoration: none;
@@ -187,7 +193,7 @@ h2 {
 
 .sidebar {
   top: 250%;
-  left: 1.3%;
+  left: 1em;
   width: 4em;
   position: relative;
   background: white;

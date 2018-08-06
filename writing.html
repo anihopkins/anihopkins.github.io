@@ -2,84 +2,100 @@
 <html lang="en-US">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="iso-8859-7">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <title> Ani Hopkins - Writing </title>
 </head>
-<body>
-  <h1><a href="index.html"> ANI HOPKINS </a></h1>
-  <div class="box black"> </div>
-  <div class="sidebar">
-    <a href="index.html"> ABOUT </a>
-    <p></p>
-    <a href="writing.html"> WRITING </a>
-    <p></p>
-    <a href="resume.html"> RESUME </a>
-    <p></p>
-    <a href="contact.html"> CONTACT </a>
-  </div>
-  <div class="writingMain">
-    <h2> WRITING </h2>
-    <div class="tuftsDaily">
-      THE TUFTS DAILY
+<body onload="resizeHandler()" onresize="resizeHandler()">
+  <div id="clickAway" class="fullScreen" onclick="hideMenu()"> </div>
+  <h1 id="prettyName"><a href="index.html"> ANI HOPKINS </a>
+    <div id="menu" class="menu" onmouseover="showMenu()">
+      <!-- Menu by Yaroslav Samoylov from the Noun Project -->
+      <div id="menuButton">
+        <img
+          src="menu.png"
+          width="50px"
+          title="Menu by Yaroslav Samoylov from the Noun Project">
+        </img>
+      </div>
     </div>
-      <a href="https://tuftsdaily.com/news/2018/04/04/students-workers-rally-support-dining-workers-unionization-efforts/">
-        Students and workers rally in support of dining workers' unionization
-        efforts
-      </a> <br>
-      <br>
-      <a href="https://tuftsdaily.com/news/2018/04/02/gun-scare-prompts-tupd-investigation-thursday-afternoon/">
-        Gun scare prompts TUPD investigation Thursday afternoon
-      </a> <br>
-      <br>
-      <a href="https://tuftsdaily.com/news/2018/03/12/tedxtufts-shares-stories-seeks-to-revise-perspectives/">
-        TEDxTufts shares stories, seeks to revise perspectives
-      </a> <br>
-      <br>
-      <a href="https://tuftsdaily.com/news/2018/03/09/strong-women-strong-girls-brandless-collaborate-distribute-free-menstrual-products-campus/">
-        Strong Women, Strong Girls, Brandless collaborate to distribute free
-        menstrual products on campus
-      </a> <br>
-      <br>
-      <a href="https://tuftsdaily.com/news/2018/02/28/tufts-democrats-brings-gubernatorial-candidate-bob-massie-tufts/">
-        Tufts Democrats brings gubernatorial candidate Bob Massie to Tufts
-      </a> <br>
-      <br>
-      <a href="https://tuftsdaily.com/news/2018/02/20/provost-david-harris-become-president-union-college/">
-        Provost David Harris to become president of Union College
-      </a> <br>
-      <br>
-      <a href="https://tuftsdaily.com/news/2018/02/07/tisch-college-hosts-eric-t-washington-conversation-diversity-judiciary/">
-        Tisch College hosts Eric T. Washington for conversation in divesity in
-        the judiciary
-      </a> <br>
-      <br>
-      <a href="https://tuftsdaily.com/features/2017/05/21/queer-protest-police/">
-        On Queer: On protest, on police
-      </a> <br>
-      <br>
-      <a href="https://tuftsdaily.com/features/2017/03/13/on-queer-on-income/">
-        On Queer: On income
-      </a> <br>
-      <br>
-      <a href="https://tuftsdaily.com/features/2017/03/06/on-queer-on-censorship/">
-        On Queer: On censorship
-      </a> <br>
-      <br>
-      <a href="https://tuftsdaily.com/columns/2016/12/12/on-queer-on-home-and-hogwarts/">
-        On Queer: On home (and Hogwarts)
-      </a> <br>
-      <br>
-      <a href="https://tuftsdaily.com/opinion/2016/12/08/op-ed-a-fight-for-justice/">
-        Op-Ed: A fight for justice
-      </a> <br>
-      <br>
-      <a href="https://tuftsdaily.com/opinion/2016/11/07/op-ed-aoii-sisters-still/">
-        Op-Ed: AOII: Sisters still
-      </a> <br>
-      <br>
-      <a href="https://tuftsdaily.com/columns/2016/10/17/queer-cis-straight-opinions/">
-        On Queer: On cis, straight opinions
-      </a> <br> <br> <br>
+  </h1>
+  <div id="blackBar" class="box black">
+    <div id="sidebar" class="sidebar">
+      <a href="index.html"> ABOUT </a>
+      <a href="writing.html"> WRITING </a>
+      <a href="resume.html"> RESUME </a>
+      <a href="contact.html"> CONTACT </a>
+    </div>
+    <div id="writingMain" class="writingMain">
+      <h2> WRITING </h2>
+      <div id="tuftsDaily" class="tuftsDaily">
+        THE TUFTS DAILY
+      </div>
+      <div id="writingContent" class="writingContent">
+        <a href="https://tuftsdaily.com/news/2018/04/04/students-workers-rally-support-dining-workers-unionization-efforts/">
+          Students and workers rally in support of dining workers' unionization
+          efforts
+        </a> <br>
+        <br>
+        <a href="https://tuftsdaily.com/news/2018/04/02/gun-scare-prompts-tupd-investigation-thursday-afternoon/">
+          Gun scare prompts TUPD investigation Thursday afternoon
+        </a> <br>
+        <br>
+        <a href="https://tuftsdaily.com/news/2018/03/12/tedxtufts-shares-stories-seeks-to-revise-perspectives/">
+          TEDxTufts shares stories, seeks to revise perspectives
+        </a> <br>
+        <br>
+        <a href="https://tuftsdaily.com/news/2018/03/09/strong-women-strong-girls-brandless-collaborate-distribute-free-menstrual-products-campus/">
+          Strong Women, Strong Girls, Brandless collaborate to distribute free
+          menstrual products on campus
+        </a> <br>
+        <br>
+        <a href="https://tuftsdaily.com/news/2018/02/28/tufts-democrats-brings-gubernatorial-candidate-bob-massie-tufts/">
+          Tufts Democrats brings gubernatorial candidate Bob Massie to Tufts
+        </a> <br>
+        <br>
+        <a href="https://tuftsdaily.com/news/2018/02/20/provost-david-harris-become-president-union-college/">
+          Provost David Harris to become president of Union College
+        </a> <br>
+        <br>
+        <a href="https://tuftsdaily.com/news/2018/02/07/tisch-college-hosts-eric-t-washington-conversation-diversity-judiciary/">
+          Tisch College hosts Eric T. Washington for conversation in diversity in
+          the judiciary
+        </a> <br>
+        <br>
+        <a href="https://tuftsdaily.com/features/2017/05/21/queer-protest-police/">
+          On Queer: On protest, on police
+        </a> <br>
+        <br>
+        <a href="https://tuftsdaily.com/features/2017/03/13/on-queer-on-income/">
+          On Queer: On income
+        </a> <br>
+        <br>
+        <a href="https://tuftsdaily.com/features/2017/03/06/on-queer-on-censorship/">
+          On Queer: On censorship
+        </a> <br>
+        <br>
+        <a href="https://tuftsdaily.com/columns/2016/12/12/on-queer-on-home-and-hogwarts/">
+          On Queer: On home (and Hogwarts)
+        </a> <br>
+        <br>
+        <a href="https://tuftsdaily.com/opinion/2016/12/08/op-ed-a-fight-for-justice/">
+          Op-Ed: A fight for justice
+        </a> <br>
+        <br>
+        <a href="https://tuftsdaily.com/opinion/2016/11/07/op-ed-aoii-sisters-still/">
+          Op-Ed: AOII: Sisters still
+        </a> <br>
+        <br>
+        <a href="https://tuftsdaily.com/columns/2016/10/17/queer-cis-straight-opinions/">
+          On Queer: On cis, straight opinions
+        </a> <br> <br> <br>
+      </div>
+    </div>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="writing.js"></script>
 </body>
 </html>

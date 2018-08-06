@@ -1,7 +1,7 @@
 $("#clickAway").hide()
 windowSize = "Large"
 
-// Resizes the contact window to accommodate smaller screens
+// Resizes the writing window to accommodate smaller screens
 function resizeHandler() {
   /* console.clear()
   console.log($(window).width()) */
@@ -15,24 +15,25 @@ function resizeHandler() {
       $("hw").css("width","70vw")
       windowSize = "Small"
     }
-    $("#contactMain").css("left", "2%")
-    $("#contactMain p").css({"font-size":"100%", "margin-top":"1%"})
+    $("#writingMain").css("left", "2%")
+    $("#writingContent").css({"font-size":"100%", "margin-top":"1%"})
     $("#sidebar").css({"position":"absolute", "left":"-220%", "top":"0%", "width":"4em", "z-index":"10000"})
   } else {
     if (windowSize = "Small") {
       hideMenu()
       $("#menu").hide()
-      $("#contactMain").css("left", "8em")
+      $("#writingMain").css("left", "8em")
       $("#sidebar a").css({"font-size":"18pt", "border":"none","width":"4em"})
       $("#sidebar").show()
-      $("#contactMain").before($("#sidebar"))
+      $("#writingMain").before($("#sidebar"))
       windowSize = "Large"
     }
-    $("#contactMain p").css({"font-size":"120%", "margin-top":"0%"})
-    screenWidth = $(window).width()/parseFloat($("#contactMain").css("font-size"));
+    $("#writingContent").css({"font-size":"120%", "margin-top":"0%"})
+    screenWidth = $(window).width()/parseFloat($("#writingMain").css("font-size"));
     mainWidth = (0.8 * (screenWidth - 12)).toString() + "em";
     h2Width = (0.4 * (screenWidth - 6)).toString() + "em";
-    $("#contactMain p").css("width", mainWidth)
+    $("#writingContent").css("width", mainWidth)
+    $("#tuftsDaily").css("width", h2Width)
     $("h2").css("width", h2Width)
     $("#sidebar").css({"position":"relative", "left":"1em", "top":"250%", "width":"4em", "z-index":"9999"})
   }
