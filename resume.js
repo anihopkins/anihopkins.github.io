@@ -1,7 +1,7 @@
 $("#clickAway").hide()
 windowSize = "Large"
 
-// Resizes the contact window to accommodate smaller screens
+// Resizes the resume window to accommodate smaller screens
 function resizeHandler() {
   /* console.clear()
   console.log($(window).width()) */
@@ -15,24 +15,24 @@ function resizeHandler() {
       $("h2").css("width","70vw")
       windowSize = "Small"
     }
-    $("#contactMain").css("left", "2%")
-    $("#contactMain p").css({"font-size":"100%", "margin-top":"1%"})
+    $("#resumeMain").css("left", "2%")
+    $("#resumeContent").css({"font-size":"100%", "margin-top":"1%"})
     $("#sidebar").css({"position":"absolute", "left":"-220%", "top":"0%", "width":"4em", "z-index":"10000"})
   } else {
     if (windowSize = "Small") {
       hideMenu()
       $("#menu").hide()
-      $("#contactMain").css("left", "8em")
+      $("#resumeMain").css("left", "8em")
       $("#sidebar a").css({"font-size":"18pt", "border":"none","width":"4em"})
       $("#sidebar").show()
-      $("#contactMain").before($("#sidebar"))
+      $("#resumeMain").before($("#sidebar"))
       windowSize = "Large"
     }
-    $("#contactMain p").css({"font-size":"120%", "margin-top":"0%"})
-    screenWidth = $(window).width()/parseFloat($("#contactMain").css("font-size"));
+    $("#resumeContent").css({"font-size":"120%", "margin-top":"0%"})
+    screenWidth = $(window).width()/parseFloat($("#resumeMain").css("font-size"));
     mainWidth = (0.8 * (screenWidth - 12)).toString() + "em";
     h2Width = (0.4 * (screenWidth - 6)).toString() + "em";
-    $("#contactMain p").css("width", mainWidth)
+    $("#resumeContent").css("width", mainWidth)
     $("h2").css("width", h2Width)
     $("#sidebar").css({"position":"relative", "left":"1em", "top":"250%", "width":"4em", "z-index":"9999"})
   }

@@ -12,7 +12,7 @@ function resizeHandler() {
       $("#menu").show()
       $("#sidebar a").css({"font-size":"24pt", "border":"1px solid black","width":"4em"})
       $("#sidebar a:hover").css({"width":"9em", "z-index":"10001"})
-      $("hw").css("width","70vw")
+      $("h2").css("width","70vw")
       windowSize = "Small"
     }
     $("#writingMain").css("left", "2%")

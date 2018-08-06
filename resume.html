@@ -2,62 +2,74 @@
 <html lang="en-US">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="iso-8859-7">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <title> Ani Hopkins - Resume </title>
 </head>
-<body>
-  <h1> <a href="index.html"> ANI HOPKINS </a> </h1>
-  <div class="box black"> </div>
-  <div class="sidebar">
-    <a href="index.html"> ABOUT </a>
-    <p></p>
-    <a href="writing.html"> WRITING </a>
-    <p></p>
-    <a href="resume.html"> RESUME </a>
-    <p></p>
-    <a href="contact.html"> CONTACT </a>
+<body onload="resizeHandler()" onresize="resizeHandler()">
+  <div id="clickAway" class="fullScreen" onclick="hideMenu()"> </div>
+  <h1 id="prettyName"><a href="index.html"> ANI HOPKINS </a>
+    <div id="menu" class="menu" onmouseover="showMenu()">
+      <!-- Menu by Yaroslav Samoylov from the Noun Project -->
+      <div id="menuButton">
+        <img
+          src="menu.png"
+          width="50px"
+          title="Menu by Yaroslav Samoylov from the Noun Project">
+        </img>
+      </div>
+    </div>
+  </h1>
+  <div id="blackBar" class="box black">
+    <div id="sidebar" class="sidebar">
+      <a href="index.html"> ABOUT </a>
+      <a href="writing.html"> WRITING </a>
+      <a href="resume.html"> RESUME </a>
+      <a href="contact.html"> CONTACT </a>
+    </div>
+    <div id="resumeMain" class="resumeMain">
+      <h2> RESUME </h2>
+      <div class="workplace"> <b>Girls Who Code</b> &ndash; Teaching assistant
+      (<i>New York, NY</i>)
+      <ul>
+        <li>Led lectures in computer science topics including Python and Arduino
+        programming.</li>
+        <li>Coordinated speakers and panels with employees at Amazon Books.</li>
+        <li>Maintained a clean and well-ordered classroom.</li>
+      </ul>
+      </div>
+      <div class="workplace"> <b>The Tufts Daily</b> &ndash; Website editor
+      (<i>Medford, MA</i>)
+      <ul>
+        <li>Led a team of six to ten CSS developers on a website rebuild
+        project.</li>
+        <li>Balanced design, editorial, development, and business needs during
+        development of the rebuilt website.</li>
+        <li>Coordinated an eight-week development schedule and ensured developers
+        were fulfilling scheduled requirements.</li>
+      </ul>
+      </div>
+      <div class="workplace"> <b>The Tufts Daily</b> &ndash; Staff news writer
+      (<i>Medford, MA</i>)
+      <ul>
+        <li>Covered incidents and events on the Medford campus of Tufts
+        University.</li>
+        <li>Reported and wrote breaking news stories on as little as two hours'
+        turnaround. </li>
+        <li>Collaborated with other reporters and sections on news stories.</li>
+      </ul>
+      </div>
+      <div class="workplace"> <b>The Tufts Daily</b> &ndash; Columnist
+      (<i>Medford, MA</i>)
+      <ul>
+        <li>Contributed articles to a weekly community column on queer and
+        trans life and identity on Tufts campus.</li>
+      </ul>
+      </div>
+    </div>
   </div>
-  <div class="resumeMain">
-    <h2> RESUME </h2>
-    <div class="workplace"> <b>Girls Who Code</b> &ndash; Teaching assistant
-    (<i>New York, NY</i>)
-    <ul>
-      <li>Led lectures in computer science topics including Python and Arduino
-      programming.</li>
-      <li>Coordinated speakers and panels with employees at Amazon Books.</li>
-      <li>Maintained a clean and well-ordered classroom.</li>
-    </ul>
-    </div>
-    <div class="workplace"> <b>The Tufts Daily</b> &ndash; Website editor
-    (<i>Medford, MA</i>)
-    <ul>
-      <li>Led a team of six to ten CSS developers on a website rebuild
-      project.</li>
-      <li>Balanced design, editorial, development, and business needs during
-      development of the rebuilt website.</li>
-      <li>Coordinated an eight-week development schedule and ensured developers
-      were fulfilling scheduled requirements.</li>
-    </ul>
-    </div>
-    <div class="workplace"> <b>The Tufts Daily</b> &ndash; Staff news writer
-    (<i>Medford, MA</i>)
-    <ul>
-      <li>Covered incidents and events on the Medford campus of Tufts
-      University.</li>
-      <li>Reported and wrote breaking news stories on as little as two hours'
-      turnaround. </li>
-      <li>Collaborated with other reporters and sections on news stories.</li>
-    </ul>
-    </div>
-    <div class="workplace"> <b>The Tufts Daily</b> &ndash; Columnist
-    (<i>Medford, MA</i>)
-    <ul>
-      <li>Contributed articles to a weekly community column on queer and
-      trans life and identity on Tufts campus.</li>
-    </ul>
-    <br>
-    <br>
-    </div>
-  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="resume.js"></script>
 </body>
 </html>
