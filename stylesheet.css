@@ -133,7 +133,6 @@ h2 {
 }
 
 .workplace {
-  font-size: 120%;
   margin-top: 2%;
   margin-left: 2%;
   position: relative;
@@ -142,6 +141,11 @@ h2 {
 
 .workplace ul{
   margin-top: 0.5%;
+}
+
+.workHeading {
+  width: 80%;
+  margin-top: -0.5em;
 }
 
 .contactMain {
