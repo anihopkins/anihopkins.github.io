@@ -63,15 +63,15 @@ h2 {
 
 .aboutMain {
   margin-top: 0%;
-  margin-left: 2%;
-  width: inherit;
+  margin-left: 2em;
+  width: 80%;
   position: absolute;
-  top: 120px;
-  left: 175px;
+  top: 1em;
+  left: 8em;
   font-family: 'Liberation-Sans';
 }
 
-.aboutMain p{
+.aboutContent{
   margin-top: 0%;
   margin-left: 2%;
   width: 70%;

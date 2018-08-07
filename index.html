@@ -2,39 +2,53 @@
 <html lang="en-US">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="iso-8859-7">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <title> Ani Hopkins - About </title>
 </head>
-<body>
-  <h1> <a href="index.html"> ANI HOPKINS </a> </h1>
-  <div class="box black"> </div>
-  <div class="sidebar">
-    <a href="index.html"> ABOUT </a>
-    <p></p>
-    <a href="writing.html"> WRITING </a>
-    <p></p>
-    <a href="resume.html"> RESUME </a>
-    <p></p>
-    <a href="contact.html"> CONTACT </a>
+<body onload="resizeHandler()" onresize="resizeHandler()">
+  <div id="clickAway" class="fullScreen" onclick="hideMenu()"> </div>
+  <h1 id="prettyName"><a href="index.html"> ANI HOPKINS </a>
+    <div id="menu" class="menu" onmouseover="showMenu()">
+      <!-- Menu by Yaroslav Samoylov from the Noun Project -->
+      <div id="menuButton">
+        <img
+          src="menu.png"
+          width="50px"
+          title="Menu by Yaroslav Samoylov from the Noun Project">
+        </img>
+      </div>
+    </div>
+  </h1>
+  <div id="blackBar" class="box black">
+    <div id="sidebar" class="sidebar">
+      <a href="index.html"> ABOUT </a>
+      <a href="writing.html"> WRITING </a>
+      <a href="resume.html"> RESUME </a>
+      <a href="contact.html"> CONTACT </a>
+    </div>
+    <div id="aboutMain" class="aboutMain">
+      <h2> ABOUT </h2>
+      <div id="aboutContent" class="aboutContent">
+        Ani Hopkins is a journalist, teacher, and computer scientist. She
+        is working towards obtaining a Bachelor of Science with a focus in
+        cybercommunication in 2019 from Tufts University. Her work is focused on
+        labor journalism, queer and trans issues, and using technology to reach
+        broader audiences with better information.
+        <br><br>
+        Ani has written for <i>The Tufts Daily</i> as a staff news writer, a
+        columnist, and a contributing opinion writer. She currently lives in
+        Brooklyn with her boyfriend and teaches for Girls Who Code.
+        <br><br>
+        Outside of work, she enjoys comics, cooking, podcasts and trains.
+        She is a member of the New York Trans Boxing Collective and the Tufts
+        University chapter of Women in Computer Science (WiCS).
+      </div>
+      <div id="aboutPhoto"><img src="aboutPhoto.png" align="center"></div>
+    </div>
   </div>
-  <div class="aboutMain">
-    <h2> ABOUT </h2>
-    <p>
-      Ani Hopkins is a journalist, teacher, and computer scientist. She
-      is working towards obtaining a Bachelor of Science with a focus in
-      cybercommunication in 2019 from Tufts University. Her work is focused on
-      labor journalism, queer and trans issues, and using technology to reach
-      broader audiences with better information.
-      <br><br>
-      Ani has written for <i>The Tufts Daily</i> as a staff news writer, a
-      columnist, and a contributing opinion writer. She currently lives in
-      Brooklyn with her boyfriend and teaches for Girls Who Code.
-      <br><br>
-      Outside of work, she enjoys comics, cooking, podcasts and trains.
-      She is a member of the New York Trans Boxing Collective and the Tufts
-      University chapter of Women in Computer Science (WiCS).
-    </p>
-    <img src="aboutPhoto.png">
-  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="about.js"></script>
 </body>
 </html>
