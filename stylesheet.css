@@ -74,17 +74,19 @@ h2 {
 .aboutContent{
   margin-top: 0%;
   margin-left: 2%;
-  width: 70%;
+  top: 2em;
   position: absolute;
   font-family: 'Liberation-Sans';
   font-size: 120%;
+  display: inline;
 }
 
 .aboutMain img {
+  padding-bottom: 3em;
   height: 20em;
-  position: relative;
-  top: 2%;
-  left: 75%;
+  top: 5em;
+  position: absolute;
+  display: inline;
 }
 
 .tuftsDaily {
