@@ -49,7 +49,6 @@ function resizeHandler() {
       $("#aboutPhoto").css({"width":"auto", "height":"20em","top":"0.5em", "display":"block", "position":"relative"})
 
     } else {
-      console.log(textHeight)
       $("#aboutContent").css({"width":"80%", "display":"block"})
       $("#aboutPhoto").before($("#aboutContent"))
       $("#aboutPhoto").css({"height":"auto", "width":0.75 * textWidth, "left":photoLeft, "top":textHeight+5, "display":"block", "position":"relative"})
