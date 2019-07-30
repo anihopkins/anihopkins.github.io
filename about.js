@@ -17,8 +17,8 @@ function resizeHandler() {
     if (windowSize == "Large") {
       $("#sidebar").hide()
       $("#menu").show()
-      $("#sidebar a").css({"font-size":"24pt", "border":"1px solid black","width":"4em"})
-      $("#sidebar a:hover").css({"width":"", "z-index":""})
+      $("#sidebar a").css({"-moz-transition":"", "-o-transition":"", "-webkit-transition":"","font-size":"24pt", "border":"1px solid black","width":"4em"})
+      $("#sidebar a:hover").css({"color":"", "background":"", "width":""})
       $("h2").css("width","70vw")
       $("h1").css("width","70%")
       windowSize = "Small"
@@ -32,7 +32,8 @@ function resizeHandler() {
       hideMenu()
       $("#menu").hide()
       $("#aboutMain").css("left", "8em")
-      $("#sidebar a").css({"font-size":"18pt", "border":"none","width":"4em"})
+      $("#sidebar a").css({"-moz-transition":"all .2s ease-in", "-o-transition":"all .2s ease-in", "-webkit-transition":"all .2s ease-in", "font-size":"18pt", "border":"none","width":"4em"})
+      $("#sidebar a:hover").css({"color":"black", "background":"white", "width":"4em"})
       $("#sidebar").show()
       $("#aboutMain").before($("#sidebar"))
       windowSize = "Large"
