@@ -17,7 +17,8 @@ function resizeHandler() {
     if (windowSize == "Large") {
       $("#sidebar").hide()
       $("#menu").show()
-      $("#sidebar a").css({"-moz-transition":"", "-o-transition":"", "-webkit-transition":"","font-size":"24pt", "border":"1px solid black","width":"4em"})
+      $("#sidebar").addClass("sidebarMobile")
+      $("#sidebar").removeClass("sidebarDesktop")
       $("#sidebar a:hover").css({"color":"", "background":"", "width":""})
       $("h2").css("width","70vw")
       $("h1").css("width","70%")
@@ -26,18 +27,20 @@ function resizeHandler() {
     $("#aboutMain").css("left", "2%")
     $("#aboutContent").css({"font-size":"100%", "margin-top":"1%"})
     $("#sidebar").css({"position":"absolute", "left":"-220%", "top":"0%", "width":"4em", "z-index":"10000"})
+    $("#sidebar a").css({"font-size":"24pt", "border":"1px solid black","width":"4em"})
     $("#aboutPhoto").css({"height":"auto", "width":0.75 * textWidth, "left":photoLeft, "top":textHeight, "display":"block", "position":"relative"})
   } else {
     if (windowSize = "Small") {
       hideMenu()
       $("#menu").hide()
       $("#aboutMain").css("left", "8em")
-      $("#sidebar a").css({"-moz-transition":"all .2s ease-in", "-o-transition":"all .2s ease-in", "-webkit-transition":"all .2s ease-in", "font-size":"18pt", "border":"none","width":"4em"})
-      $("#sidebar a:hover").css({"color":"black", "background":"white", "width":"4em"})
+      $("#sidebar a").css({"font-size":"18pt", "border":"none","width":"4em"})
+      $("#sidebar").addClass("sidebarDesktop")
+      $("#sidebar").removeClass("sidebarMobile")
       $("#sidebar").show()
       $("#aboutMain").before($("#sidebar"))
-      windowSize = "Large"
       $("h1").css("width","100%")
+      windowSize = "Large"
     }
     $("#aboutContent").css({"font-size":"120%", "margin-top":"0%"})
     screenWidth = windowWidth/parseFloat($("body").css("font-size"));

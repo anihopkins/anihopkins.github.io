@@ -197,7 +197,7 @@ h2 {
   background: black;
 }
 
-.sidebar {
+.sidebarDesktop {
   top: 250%;
   left: 1em;
   width: 4em;
@@ -207,7 +207,7 @@ h2 {
   z-index: 9999;
 }
 
-.sidebar a {
+.sidebarDesktop a {
   -moz-transition: all .2s ease-in;
   -o-transition: all .2s ease-in;
   -webkit-transition: all .2s ease-in;
@@ -222,9 +222,30 @@ h2 {
   width: 4em;
 }
 
-.sidebar a:hover {
+.sidebarDesktop a:hover {
   color: white;
   background: black;
+  width: 4em;
+}
+
+.sidebarMobile {
+  top: 250%;
+  left: 1em;
+  width: 4em;
+  position: relative;
+  background: white;
+  color: black;
+  z-index: 9999;
+}
+
+.sidebarMobile a {
+  padding: 0 0.5em 0 0.5em;
+  color: black;
+  background: white;
+  font-family: 'Liberation-Mono';
+  font-size: 18pt;
+  text-decoration: none;
+  display: block;
   width: 4em;
 }
 
