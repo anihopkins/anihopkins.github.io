@@ -18,7 +18,7 @@ function resizeHandler() {
       $("#sidebar").hide()
       $("#menu").show()
       $("#sidebar a").css({"font-size":"24pt", "border":"1px solid black","width":"4em"})
-      $("#sidebar a:hover").css({"width":"4em", "z-index":"10001"})
+      $("#sidebar a:hover").css({"width":"", "z-index":""})
       $("h2").css("width","70vw")
       $("h1").css("width","70%")
       windowSize = "Small"
