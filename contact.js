@@ -1,5 +1,6 @@
 $("#clickAway").hide()
 windowSize = "Large"
+resizeHandler()
 
 // Resizes the contact window to accommodate smaller screens
 function resizeHandler() {
