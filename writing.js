@@ -7,13 +7,14 @@ function resizeHandler() {
   /* console.clear()
   console.log($(window).width()) */
 
-  if ($(window).width() < 380) {
+  if ($(window).width() < 485) {
     if (windowSize == "Large") {
       $("#sidebar").hide()
       $("#menu").show()
       $("#sidebar a").css({"font-size":"24pt", "border":"1px solid black","width":"4em"})
       $("#sidebar a:hover").css({"width":"9em", "z-index":"10001"})
       $("h2").css("width","70vw")
+      $("h1").css("width","70%")
       windowSize = "Small"
     }
     $("#writingMain").css("left", "2%")
@@ -28,6 +29,7 @@ function resizeHandler() {
       $("#sidebar").show()
       $("#writingMain").before($("#sidebar"))
       windowSize = "Large"
+      $("h1").css("width","100%")
     }
     $("#writingContent").css({"font-size":"120%", "margin-top":"0%"})
     screenWidth = $(window).width()/parseFloat($("#writingMain").css("font-size"));
