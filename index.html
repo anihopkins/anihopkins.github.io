@@ -8,7 +8,7 @@
 </head>
 <body onload="resizeHandler()" onresize="resizeHandler()">
   <div id="clickAway" class="fullScreen" onclick="hideMenu()"> </div>
-  <h1 id="prettyName"><a href="index.html"> ANI HOPKINS </a>
+  <h1 tabindex=0 id="prettyName"><a href="index.html"> ANI HOPKINS </a>
     <div id="menu" class="menu" onmouseover="showMenu()">
       <!-- Menu by Yaroslav Samoylov from the Noun Project -->
       <div id="menuButton">
@@ -21,14 +21,8 @@
     </div>
   </h1>
   <div id="blackBar" class="box black">
-    <div id="sidebar" class="sidebar">
-      <a href="index.html"> ABOUT </a>
-      <a href="writing.html"> WRITING </a>
-      <a href="resume.html"> RESUME </a>
-      <a href="contact.html"> CONTACT </a>
-    </div>
     <div id="aboutMain" class="aboutMain">
-      <h2> ABOUT </h2>
+      <h2 tabindex=0> ABOUT </h2>
       <div id="aboutContent" class="aboutContent">
         <br>
         Ani Hopkins is a computer scientist, teacher, and art historian. She
@@ -40,9 +34,9 @@
         web development, computational physics, machine structure, x86 Assembly
       	programming, and software development in C.
         <br><br>
-        Ani has worked for <i>The Tufts Daily</i> as a staff news writer, a
-        columnist, a contributing opinion writer, and a website editor.
-	      She currently lives in Somerville, MA and teaches for Girls Who Code.
+        Ani has worked for <i>The Tufts Daily</i> as a staff news writer and a
+        website editor, among other roles. She currently lives in Somerville, MA
+        and teaches for Girls Who Code.
         <br><br>
         Her scholarly work focuses on the history of Armenian painted
         manuscripts and their interactions with the architectural environments
@@ -50,11 +44,19 @@
         <em>Kunstkammer</em> undergraduate journal of art and art history.
         <br><br>
         Outside of work, Ani likes comics, cooking, podcasts, and trains. She
-	      enjoys working on side projects of all natures, whether programming,
-	      writing, or expanding her visual arts practice.
+        enjoys working on side projects of all natures, whether programming,
+        writing, or expanding her visual arts practice.
         <br><br>
       </div>
-      <img id="aboutPhoto" src="headshot.jpg" align="center">
+      <div role="menu" id="sidebar" class="sidebar">
+        <a role="link" href="index.html"> ABOUT </a>
+        <a role="link" href="writing.html"> WRITING </a>
+        <a role="link" href="resume.html"> RESUME </a>
+        <a role="link" href="contact.html"> CONTACT </a>
+      </div>
+      <img alt="A picture of Ani Hopkins. She has short hair and is wearing
+      dark maroon lipstick, a white blouse, and a blazer. She is smiling and
+      looking at the camera." id="aboutPhoto" src="headshot.jpg" align="center">
     </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">

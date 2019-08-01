@@ -45,7 +45,7 @@ function resizeHandler() {
     if (windowWidth > 1000) {
       $("#aboutPhoto").css("left", ((mainWidth * 1.3) + 1).toString() + "em")
       $("#aboutContent").css("width", mainWidth.toString() + "em")
-      $("#aboutMain").prepend($("#aboutContent"))
+      $("#aboutMain").append($("#aboutContent"))
       $("#aboutPhoto").css({"width":"auto", "height":"20em","top":"0.5em", "display":"block", "position":"relative"})
 
     } else {
